@@ -1,4 +1,14 @@
 <div class="enviroment-container">
+    <app-dashboard *ngIf="this.component === 'DashboardComponent'"
+    ></app-dashboard>
+    <app-hero-detail *ngIf="this.component === 'HeroDetailComponent'"
+    ></app-hero-detail>
+    <app-hero-search *ngIf="this.component === 'HeroSearchComponent'"
+    ></app-hero-search>
+    <app-heroes *ngIf="this.component === 'HeroesComponent'"
+    ></app-heroes>
+    <app-messages *ngIf="this.component === 'MessagesComponent'"
+    ></app-messages>
 </div>
 
 <button type="button" (click)="onClickMe()">Click me!</button>
