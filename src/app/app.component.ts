@@ -11,6 +11,17 @@ import { FlaskapiService } from './flaskapi.service';
 export class AppComponent {
 
   routeList:string[][] = [
+    [ 'DashboardComponent'
+    ],
+    [ 'HeroDetailComponent'
+      ,':id'
+    ],
+    [ 'HeroSearchComponent'
+    ],
+    [ 'HeroesComponent'
+    ],
+    [ 'MessagesComponent'
+    ],
   ]
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private http: HttpClient, private flaskapiService: FlaskapiService) {
